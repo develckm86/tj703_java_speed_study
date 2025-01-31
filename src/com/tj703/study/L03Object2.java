@@ -21,7 +21,8 @@ class B{
         //a=a; //함수의 내의 변수명과 필드명이 같을 때 변수가 우선 순위를 갖는다.
         this.a=a;
     }
-
+    //다형성 : 하나가 역할이 여러개인 것 (객체지향 문법)
+    //오버로드, 오버라이드, 타입의 다형성
     public void add(int a, int b){
         System.out.println(a+b);
     }
@@ -50,7 +51,9 @@ public class L03Object2 {
         new B().add(20,30,40);
 
         //변수 : 객체를 재사용하는 목적으로 정의하는 것
-        B b=new B();
+        //상수 : 처음 대입한 값을 바꿀 수 없는 것
+        final B b=new B();
+        //b=new B(10);
         //B : class 명을  type 이라 부른다.
         //b : 변수의 이름
         //new B(); : 변수가 참조할 객체
